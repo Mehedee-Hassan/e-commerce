@@ -11,7 +11,7 @@ function Product({ product }) {
         </Link>
 
         <Card.Body>
-            <Link to={'/product/${product._id}'}>
+            <Link to={`/product/${product._id}`}>
                 <Card.Title as="dic">
                     <b>{product.name}</b>
                 </Card.Title>
