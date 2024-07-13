@@ -24,6 +24,6 @@ def getRoutes(requests):
     return Response(routes)
 
 
-@api_view
+@api_view(['GET'])
 def getProducts(requests):
-    return JsonResponse(products, safe = False)
+    return Response(products)
