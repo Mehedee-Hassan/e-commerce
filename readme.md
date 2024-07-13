@@ -26,3 +26,14 @@ pip install -r install.txt
 conda activate django-ecommerce
 python manage.py runserver
 ```
+### INSTALL 
+```
+pip install djangorestframework 
+```
+
+
+## FORNT END 
+
+```
+npm install axios
+```

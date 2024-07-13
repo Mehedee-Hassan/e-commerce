@@ -27,3 +27,15 @@ def getRoutes(requests):
 @api_view(['GET'])
 def getProducts(requests):
     return Response(products)
+
+
+
+@api_view(['GET'])
+def getProduct(requests,product_key):
+
+    product_response = None
+    for product in products:
+        if product['_id'] == product_key:
+            product_response = product
+
+    return Response(product_response)
