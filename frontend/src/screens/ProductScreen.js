@@ -3,16 +3,14 @@ import { Link, useParams } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import axios from 'axios'
-import products from '../products'
+// import products from '../products'
 
-function ProductScreen({ match }) {
+function ProductScreen() {
     const { id } = useParams();
     // const product = products.find((p) => p._id == id)
     // const product = products.find((p) => p._id === match.params.id)
 
     const [product, setProduct] = useState([])
-
-    console.log(match)
 
     useEffect( () => {  
 
