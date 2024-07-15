@@ -39,9 +39,6 @@ def getProducts(requests):
 @api_view(['GET'])
 def getProduct(requests,product_key):
 
-    product_response = None
-    for product in products:
-        if product['_id'] == product_key:
-            product_response = product
-
-    return Response(product_response)
+    product = Product.objects.get(_id=product_key)
+    serializer = ProductsSerializer(product, many=False)
+    return Response(serializer.data)
