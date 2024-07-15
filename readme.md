@@ -31,5 +31,7 @@ python manage.py runserver
 ## FORNT END 
 
 ```
-npm install axios
+cd frontend
+npm install 
+nom start
 ```
