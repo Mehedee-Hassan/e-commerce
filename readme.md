@@ -28,7 +28,7 @@ python manage.py runserver
 ```
 
 
-## FORNT END 
+## FRONTEND 
 
 ```
 cd frontend
