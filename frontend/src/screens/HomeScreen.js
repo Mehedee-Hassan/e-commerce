@@ -16,7 +16,7 @@ function HomeScreen(){
 
         async function fetchProduct(){
             const {data} = await axios.get('/v1/api/products/')
-            
+
             setProducts(data)
         }
 

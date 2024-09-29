@@ -4,7 +4,7 @@
 
 ## DEV ENV
 
-- IDE 
+- IDE
   - Pycharm
   - VS code
 - Extensions (VS Code)
@@ -43,10 +43,10 @@ python manage.py runserver
 ```
 
 
-## FRONTEND 
+## FRONTEND
 
 ```
 cd frontend
-npm install 
+npm install
 nom start
 ```

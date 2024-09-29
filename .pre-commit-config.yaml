@@ -1,0 +1,25 @@
+repos:
+  # Pre-commit hooks repository
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0  # Latest stable release
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+
+  # Black formatter
+  - repo: https://github.com/psf/black
+    rev: 24.8.0  # Latest stable version
+    hooks:
+      - id: black
+
+  # isort for sorting imports
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1  # Use a stable release
+    hooks:
+      - id: isort
+
+  # Pylint
+  - repo: https://github.com/pre-commit/mirrors-pylint
+    rev: v3.0.0a5  # Latest stable version
+    hooks:
+      - id: pylint

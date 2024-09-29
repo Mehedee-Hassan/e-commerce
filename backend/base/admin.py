@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-
-from .models import Product, ShippingAddress, OrderItem, Order, Review
+from .models import Order, OrderItem, Product, Review, ShippingAddress
 
 admin.site.register(Product)
 admin.site.register(Review)

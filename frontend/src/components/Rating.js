@@ -13,7 +13,7 @@ function Rating({value, text, color}) {
             }>
 
         </i>
-    
+
         </span>
         <span>
             <i style={{ color }} className={

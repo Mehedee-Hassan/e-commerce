@@ -12,12 +12,12 @@ function ProductScreen() {
 
     const [product, setProduct] = useState([])
 
-    useEffect( () => {  
+    useEffect( () => {
 
 
         async function fetchProduct(){
             const {data} = await axios.get(`/v1/api/products/${id}`)
-            
+
             setProduct(data)
         }
 
@@ -78,11 +78,11 @@ function ProductScreen() {
                         </ListGroup.Item>
                     </ListGroup>
                 </Card>
-                
+
             </Col>
         </Row>
     </div>
-  ) 
+  )
 }
 
 export default ProductScreen
