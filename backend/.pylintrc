@@ -1,2 +1,12 @@
+
 [MASTER]
-ignore=migrations
+ignore=migrations,tests
+
+[MESSAGES CONTROL]
+disable=C0114,C0115,C0116,E1101
+
+[FORMAT]
+max-line-length=120
+
+[REPORTS]
+reports=no
