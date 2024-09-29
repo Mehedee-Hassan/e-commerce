@@ -9,35 +9,31 @@ from rest_framework.response import Response
 from .serializers import ProductsSerializer
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def getRoutes(requests):
 
     routes = [
-        '/v1/api/products',
-        '/v1/api/products/create',
-        '/v1/api/products/upload',
-        '/v1/api/products/<id>/reviews/',
-
-        '/v1/api/products/top/',
-        '/v1/api/products/<id>/',
-
-        '/v1/api/products/delete/<id>/',
-        '/v1/api/products/<update>>/<id>/',
-
+        "/v1/api/products",
+        "/v1/api/products/create",
+        "/v1/api/products/upload",
+        "/v1/api/products/<id>/reviews/",
+        "/v1/api/products/top/",
+        "/v1/api/products/<id>/",
+        "/v1/api/products/delete/<id>/",
+        "/v1/api/products/<update>>/<id>/",
     ]
     return Response(routes)
 
 
-@api_view(['GET'])
+@api_view(["GET"])
 def getProducts(requests):
     products = Product.objects.all()
-    serializer  = ProductsSerializer(products, many=True)
+    serializer = ProductsSerializer(products, many=True)
     return Response(serializer.data)
 
 
-
-@api_view(['GET'])
-def getProduct(requests,product_key):
+@api_view(["GET"])
+def getProduct(requests, product_key):
 
     product = Product.objects.get(_id=product_key)
     serializer = ProductsSerializer(product, many=False)
