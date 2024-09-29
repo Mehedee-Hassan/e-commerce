@@ -12,7 +12,7 @@
   - Prettier
 
 ```
-pip install -r install.txt
+pip install -r requirements.txt
 ```
 ## CODE REFORMATION
 
