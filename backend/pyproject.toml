@@ -1,2 +1,2 @@
 [tool.pylint.MASTER]
-ignore-paths = '^/base/migrations/.*$'
+ignore-paths = '^backend/base/migrations/.*$'
