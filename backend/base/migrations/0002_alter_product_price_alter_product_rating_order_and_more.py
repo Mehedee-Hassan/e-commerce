@@ -59,7 +59,10 @@ class Migration(migrations.Migration):
                 ("createdAt", models.DateTimeField(auto_now_add=True)),
                 (
                     "_id",
-                    models.AutoField(editable=False, primary_key=True, serialize=False),
+                    models.AutoField(
+                        editable=False,
+                        primary_key=True,
+                        serialize=False),
                 ),
                 (
                     "user",
@@ -85,7 +88,10 @@ class Migration(migrations.Migration):
                 ("image", models.CharField(blank=True, max_length=200, null=True)),
                 (
                     "_id",
-                    models.AutoField(editable=False, primary_key=True, serialize=False),
+                    models.AutoField(
+                        editable=False,
+                        primary_key=True,
+                        serialize=False),
                 ),
                 (
                     "order",
@@ -118,7 +124,10 @@ class Migration(migrations.Migration):
                 ("comment", models.TextField(blank=True, null=True)),
                 (
                     "_id",
-                    models.AutoField(editable=False, primary_key=True, serialize=False),
+                    models.AutoField(
+                        editable=False,
+                        primary_key=True,
+                        serialize=False),
                 ),
                 (
                     "product",
@@ -143,7 +152,8 @@ class Migration(migrations.Migration):
             fields=[
                 ("address", models.CharField(blank=True, max_length=200, null=True)),
                 ("city", models.CharField(blank=True, max_length=200, null=True)),
-                ("postalCode", models.CharField(blank=True, max_length=200, null=True)),
+                ("postalCode", models.CharField(
+                    blank=True, max_length=200, null=True)),
                 ("country", models.CharField(blank=True, max_length=200, null=True)),
                 (
                     "shippingPrice",
@@ -153,7 +163,10 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "_id",
-                    models.AutoField(editable=False, primary_key=True, serialize=False),
+                    models.AutoField(
+                        editable=False,
+                        primary_key=True,
+                        serialize=False),
                 ),
                 (
                     "order",

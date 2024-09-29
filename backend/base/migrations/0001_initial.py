@@ -22,13 +22,18 @@ class Migration(migrations.Migration):
                 ("category", models.CharField(blank=True, max_length=200, null=True)),
                 ("description", models.TextField(blank=True, null=True)),
                 ("rating", models.DecimalField(decimal_places=2, max_digits=7)),
-                ("numReviews", models.IntegerField(blank=True, default=0, null=True)),
+                ("numReviews", models.IntegerField(
+                    blank=True, default=0, null=True)),
                 ("price", models.DecimalField(decimal_places=2, max_digits=7)),
-                ("countInStock", models.IntegerField(blank=True, default=0, null=True)),
+                ("countInStock", models.IntegerField(
+                    blank=True, default=0, null=True)),
                 ("createdAt", models.DateTimeField(auto_now_add=True)),
                 (
                     "_id",
-                    models.AutoField(editable=False, primary_key=True, serialize=False),
+                    models.AutoField(
+                        editable=False,
+                        primary_key=True,
+                        serialize=False),
                 ),
                 (
                     "user",
