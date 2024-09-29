@@ -11,6 +11,21 @@
   - Auto Rename Tag
   - Prettier
 
+```
+pip install -r install.txt
+```
+## CODE REFORMATION
+
+### CORRECT FORMAT
+```
+python -m black */*
+autopep8 --in-place --aggressive --recursive */*
+```
+
+### CHECK PYLINT
+```
+pylint */*
+```
 
 ## APP
 ![image](https://github.com/Mehedee-Hassan/e-commerce/assets/7868774/72d2f139-426e-46ac-abd3-3a9acdcc0964)
